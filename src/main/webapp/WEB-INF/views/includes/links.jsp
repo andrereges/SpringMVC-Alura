@@ -1,7 +1,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <c:url value="/resources/css/CCStyle/" var="contextPath" />
-<link href="${contextPath}resources/css/cssbase-min.css"
+<link href="${contextPath}cssbase-min.css"
 	rel="stylesheet" type="text/css" media="all" />
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700'
 	rel='stylesheet'/>
@@ -26,9 +26,9 @@
 <link href="${contextPath}checkout.css" 
    	rel="stylesheet" type="text/css"  media="all"  />
 <c:url value="/resources/" var="path" />
-<link rel="stylesheet" href="${path}css/bootstrap.min.css" />
-<link rel="stylesheet" href="${path}css/bootstrap-theme.min.css" />
-<link rel="stylesheet" href="${path}css/style.css" />
-    <script src="${path }js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="${path}bootstrap.min.css" />
+<link rel="stylesheet" href="${path}bootstrap-theme.min.css" />
+<link rel="stylesheet" href="${path}style.css" />
+    <script src="${path }bootstrap.min.js"></script>
 <link rel="canonical" href="http://www.casadocodigo.com.br/" />
  
