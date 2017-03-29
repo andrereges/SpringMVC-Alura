@@ -1,5 +1,7 @@
 package br.com.casadocodigo.loja.controllers;
 
+import java.util.Arrays;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
@@ -13,6 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import br.com.casadocodigo.loja.daos.UsuarioDAO;
+import br.com.casadocodigo.loja.models.Role;
 import br.com.casadocodigo.loja.models.Usuario;
 import br.com.casadocodigo.loja.validation.UsuarioValidation;
 
@@ -85,7 +88,9 @@ public class UsuarioController {
 		
 		usuario.setSenha(senhaBcrypt);
 		
-		usuarioDAO.atualizar(usuario);;
+		usuarioDAO.atualizar(usuario);
+		
+		usuario.setRoles(Arrays.asList(new Role("ROLE_ADMIN")));
 		
 		ra.addFlashAttribute("mensagem", "Usuário "+ usuario.getEmail() +" atualizado com sucesso.");
 		

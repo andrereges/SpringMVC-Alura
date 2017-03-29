@@ -53,10 +53,6 @@
 		            <form:password path="senha" value="${usuario.senha }" cssClass="form-control"/>
 		            <form:errors path="senha" />
 		        </div>
-				
-				<div class="form-group">
-		            <label>Permissões</label>		
-		        </div>
 
 		        <form:button type="submit">${nameButton}</form:button>
 		    </form:form>
