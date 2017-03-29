@@ -52,7 +52,7 @@
 	            </exclusion>
 	        </exclusions>
 	    </dependency>
-	<!-- Logging -->
+	
 	    <dependency>
 	        <groupId>org.slf4j</groupId>
 	        <artifactId>slf4j-api</artifactId>
@@ -113,8 +113,7 @@
 		<dependency>
 		    <groupId>org.hibernate</groupId>
 		    <artifactId>hibernate-validator</artifactId>
-		    <version>4.1.0.Final</version>
-		    <!-- <version>4.2.0.Final</version> -->
+		    <version>4.2.0.Final</version>
 		</dependency>
 		
 		<!-- Dependência Jackson -->
@@ -142,29 +141,7 @@
 		    <version>4.1.0.RELEASE</version>
 		</dependency>
 		
-		<!-- Spring Security -->
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-config</artifactId>
-			<version>4.0.0.M2</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-taglibs</artifactId>
-			<version>4.0.0.M2</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-web</artifactId>
-			<version>4.0.0.M2</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-core</artifactId>
-			<version>4.0.0.M2</version>
-		</dependency>
-		
-		<!-- Dependência Spring Security
+		<!-- Dependência Spring Security -->
 		<dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-config</artifactId>
@@ -185,7 +162,7 @@
             <artifactId>spring-security-core</artifactId>
             <version>4.2.1.RELEASE</version>
         </dependency>
-         -->
+        
         <!-- Dependência dos Testes Automatizados -->
         <!-- JUnit -->
         <dependency>
@@ -203,11 +180,11 @@
 	        <scope>test</scope>
 	    </dependency>
 	
-		<!-- Spring-Security-Test 4.0.0.RELEASE-->
+		<!-- Spring-Security-Test -->
 	    <dependency>
 	        <groupId>org.springframework.security</groupId>
 	        <artifactId>spring-security-test</artifactId>
-	        <version>4.0.0.M2</version>
+	        <version>4.0.0.RELEASE</version>
 	        <scope>test</scope>
 	    </dependency>
 	    
