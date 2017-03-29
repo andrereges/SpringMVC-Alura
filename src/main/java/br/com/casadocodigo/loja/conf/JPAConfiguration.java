@@ -6,8 +6,6 @@ import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Profile;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
@@ -31,7 +29,7 @@ public class JPAConfiguration {
         
         return factoryBean;
     }
-    
+   /* 
     @Bean
     @Profile("dev")
      public Properties aditionalProperties(){
@@ -52,7 +50,7 @@ public class JPAConfiguration {
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
         return dataSource;
     }
-
+*/
     @Bean
     public JpaTransactionManager transactionManager(EntityManagerFactory emf){
         return new JpaTransactionManager(emf);
