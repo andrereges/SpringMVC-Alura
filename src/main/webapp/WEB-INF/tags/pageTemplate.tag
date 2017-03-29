@@ -10,8 +10,7 @@
     <head>
     
     	<title>${titulo} - Casa do Código</title>
-    	<c:url value="/resources/imagens/" var="imgPath" /> 
-		
+    	<c:url value="/resources/imagens/" var="imgPath" /> 		
         <%@ include file="/WEB-INF/views/includes/metadados.jsp" %>
         <%@ include file="/WEB-INF/views/includes/links.jsp" %>
         <%@ include file="/WEB-INF/views/includes/cabecalho.jsp" %>
