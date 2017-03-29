@@ -68,6 +68,8 @@ public class UsuarioController {
 		
 		usuario.setSenha(senhaBcrypt);
 		
+		usuario.setRoles(Arrays.asList(new Role("ROLE_ADMIN")));
+		
 		usuarioDAO.gravar(usuario);;
 		
 		ra.addFlashAttribute("mensagem", "Usuário "+ usuario.getEmail() +" cadastrado com sucesso.");
@@ -89,8 +91,6 @@ public class UsuarioController {
 		usuario.setSenha(senhaBcrypt);
 		
 		usuarioDAO.atualizar(usuario);
-		
-		usuario.setRoles(Arrays.asList(new Role("ROLE_ADMIN")));
 		
 		ra.addFlashAttribute("mensagem", "Usuário "+ usuario.getEmail() +" atualizado com sucesso.");
 		
