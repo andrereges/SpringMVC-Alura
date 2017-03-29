@@ -19,11 +19,11 @@
             <div>${mensagem }</div>
             <form:form servletRelativeAction="/login" method="POST">
                 <div class="form-group">
-                    <label><s:message code="login.name" /></label> -> dreeh.silva@hotmail.com
+                    <label><s:message code="login.name" /></label>
                     <input type="text" name="username" class="form-control" />
                 </div>
                 <div class="form-group">
-                    <label><s:message code="login.password" /></label> -> 1234
+                    <label><s:message code="login.password" /></label>
                     <input type="password" name="password" class="form-control" />
                 </div>
                 <button type="submit" class="btn btn-primary"><s:message code="login.button" /></button>
